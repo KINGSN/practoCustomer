@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "695953064875",
+    "firebase_url": "https://fabdoctor-default-rtdb.firebaseio.com",
+    "project_id": "fabdoctor",
+    "storage_bucket": "fabdoctor.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:695953064875:android:813781a914682a8f6f48ee",
+        "android_client_info": {
+          "package_name": "com.darwinbark.fabcustomer"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "695953064875-1v8je3u9ak7b08jobutdo56t2o526884.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBB8oCLMzH8akZjjshMKT0T3HHHWa0aXk0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "695953064875-1v8je3u9ak7b08jobutdo56t2o526884.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

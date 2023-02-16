@@ -1,0 +1,505 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/action_bar_menus"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="@color/colorPrimary"
+        android:orientation="horizontal"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:id="@+id/llBack"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:padding="10dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/back"
+                android:textColor="@color/white" />
+
+        </LinearLayout>
+
+        <com.darwinbark.fabcustomer.utils.CustomTextViewBold
+            android:id="@+id/tvHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="@string/forgot_password"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/verifyMobile"
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/LLforgot"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="20dp"
+        android:gravity="center"
+        android:visibility="visible"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/ivLogo"
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerVertical="true"
+            android:paddingTop="20dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/forgot_password" />
+
+            <com.darwinbark.fabcustomer.utils.CustomEditText
+                android:id="@+id/etEmail"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/edittext_background"
+                android:hint="@string/email_id"
+                android:inputType="textEmailAddress"
+                android:paddingStart="20dp"
+                android:singleLine="true"
+                android:visibility="gone"
+                android:textColor="@color/black"
+                android:textColorHint="@color/editketext" />
+
+        <LinearLayout
+            android:id="@+id/LLsignup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ivLogo"
+            android:layout_marginTop="50dp"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <com.darwinbark.fabcustomer.utils.CustomTextViewBold
+                android:layout_below="@id/LLsignup"
+                android:id="@+id/verifySubTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-light"
+                android:text="@string/VerifysubTitle2"
+                android:textSize="18sp"
+                android:padding="20dp"
+                android:transitionName="logo_desc" />
+
+            <com.hbb20.CountryCodePicker
+                android:id="@+id/country_code_picker"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:padding="7dp"
+                app:ccp_autoDetectCountry="true"
+                app:ccp_showFlag="true"
+                app:ccp_showFullName="true"
+                android:drawableTint="#1D82D3"
+                app:ccp_showNameCode="true" />
+
+            <com.darwinbark.fabcustomer.utils.CustomEditText
+                android:id="@+id/mobiletxt"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/edittext_background"
+                android:hint="@string/mobile_number"
+                android:inputType="number"
+                android:paddingStart="20dp"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textColorHint="@color/editketext" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <com.darwinbark.fabcustomer.utils.CustomButton
+                android:id="@+id/verifyBtn"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/button_selector2"
+                android:text="@string/next"
+                android:textAllCaps="false"
+                android:textColor="@color/white" />
+
+
+        </LinearLayout>
+
+        <com.darwinbark.fabcustomer.utils.CustomButton
+            android:id="@+id/btnSubmit"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/button_selector3"
+            android:gravity="center"
+            android:text="@string/submit"
+            android:visibility="gone"
+            android:textColor="@color/white" />
+
+
+    </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/otpLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+            android:gravity="center">
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center_vertical">
+
+
+                <ImageView
+                    android:id="@+id/verify_password_icon"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_gravity="center"
+                    app:srcCompat="@drawable/verifycode" />
+
+
+
+                <com.darwinbark.fabcustomer.utils.CustomTextViewBold
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:includeFontPadding="false"
+                    android:text="otp_verification_text"
+                    android:textAlignment="center"
+                    android:textAllCaps="true"
+                    android:textColor="@color/black"
+                    android:textSize="24sp" />
+
+
+                <com.darwinbark.fabcustomer.utils.CustomTextViewBold
+                    android:id="@+id/otp_description_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="50dp"
+                    android:includeFontPadding="false"
+                    android:text="Enter Verification Code Sent To Mobile"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <com.chaos.view.PinView
+                    android:id="@+id/pinView"
+                    style="@style/PinWidget.PinView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="30dp"
+                    android:cursorVisible="true"
+                    android:inputType="number"
+                    android:itemBackground="#65EAEAEA"
+                    app:cursorColor="@color/black"
+                    app:hideLineWhenFilled="true"
+                    app:itemCount="6"
+                    app:itemHeight="50dp"
+                    app:itemRadius="5dp"
+                    app:itemWidth="50dp"
+                    app:lineColor="@color/favcolour"
+                    app:lineWidth="1dp" />
+
+
+                <com.darwinbark.fabcustomer.utils.CustomButton
+                    android:id="@+id/verifyotpBtn"
+                    android:layout_width="220dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:text="verify_code"
+                    android:textColor="@color/black"
+                    android:transitionName="transition_OTP_screen" />
+
+                <com.darwinbark.fabcustomer.utils.CustomTextViewBold
+                    android:id="@+id/resendTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:text="Resend OTP"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textStyle="bold"
+                    android:visibility="visible" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center_vertical">
+
+
+
+                    <ImageButton
+                        android:id="@+id/vrfbackBtn"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="bottom"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginEnd="20dp"
+                        android:layout_marginBottom="20dp"
+                        android:background="@drawable/ic_action_back"
+                        android:contentDescription="TODO" />
+
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:orientation="vertical"
+                android:padding="8dp">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/otpET"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableStart="@android:drawable/ic_lock_lock"
+                        android:drawablePadding="6dp"
+                        android:drawableTint="@color/colorAccent"
+                        android:hint="Enter OTP"
+                        android:inputType="number"
+                        android:padding="12dp"
+                        tools:targetApi="m"
+                        android:drawableLeft="@android:drawable/ic_lock_lock" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/resetPaswdlay"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:id="@+id/cnflay1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="70dp"
+                android:layout_marginRight="10dp"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:padding="5dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:visibility="visible">
+
+                <ImageView
+                    android:id="@+id/reset_password_icon"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"
+                    app:srcCompat="@drawable/cnfpassword"
+                    tools:ignore="ContentDescription" />
+
+                <com.darwinbark.fabcustomer.utils.CustomTextViewBold
+                    android:id="@+id/reset_password_title"
+                    android:layout_width="311dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="-5dp"
+                    android:gravity="center"
+                    android:includeFontPadding="false"
+                    android:text="@string/new_credentials"
+                    android:textAlignment="center"
+                    android:textAllCaps="true"
+                    android:textColor="@color/black"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
+
+                <com.darwinbark.fabcustomer.utils.CustomTextViewSemiBold
+                    android:id="@+id/reset_password_description"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="5dp"
+                    android:gravity="center"
+                    android:text="@string/insert_a_new_password"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+
+                <com.darwinbark.fabcustomer.utils.CustomEditText
+                    android:id="@+id/resetpaswdtxt1"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@drawable/edittext_background"
+                    android:paddingStart="20dp"
+                    android:singleLine="true"
+                    android:layout_marginTop="30dp"
+                    android:textColor="@color/black"
+                    android:hint="@string/password"
+                    android:inputType="textPassword"
+                    android:textColorHint="@color/editketext" />
+
+                <com.darwinbark.fabcustomer.utils.CustomEditText
+                    android:id="@+id/resetpaswdtxt2"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@drawable/edittext_background"
+                    android:paddingStart="20dp"
+                    android:singleLine="true"
+                    android:layout_marginTop="30dp"
+                    android:textColor="@color/black"
+                    android:hint="@string/confirm_password"
+                    android:inputType="textPassword"
+                    android:textColorHint="@color/editketext" />
+
+                <com.darwinbark.fabcustomer.utils.CustomButton
+                    android:id="@+id/resetpswdBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/button_selector2"
+                    android:text="@string/next"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/cnflay2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <LinearLayout
+
+                    android:layout_width="349dp"
+                    android:layout_height="449dp"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginTop="83dp"
+                    android:layout_marginEnd="16dp"
+                    android:background="@drawable/pasdupdate"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical"
+                    android:visibility="visible">
+
+
+                    <com.darwinbark.fabcustomer.utils.CustomTextViewRegular
+                        android:layout_width="311dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="-5dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:gravity="center"
+                        android:text="@string/password_updated"
+                        android:textAlignment="center"
+                        android:textAllCaps="true"
+                        android:textSize="25sp"
+                        android:textStyle="bold" />
+
+                    <com.darwinbark.fabcustomer.utils.CustomTextViewRegular
+                        android:id="@+id/suv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="@string/your_password_has_been_updated"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+
+
+                </LinearLayout>
+
+                <com.darwinbark.fabcustomer.utils.CustomButton
+                    android:id="@+id/resetloginback"
+                    android:layout_height="wrap_content"
+                    android:layout_width="220dp"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="92dp"
+                    android:layout_marginTop="62dp"
+                    android:layout_marginEnd="83dp"
+                    android:gravity="center"
+                    android:background="@drawable/button_selector2"
+                    android:text="@string/login_now"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white" />
+
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>
+</layout>

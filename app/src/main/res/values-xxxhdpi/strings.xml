@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="_22_sept_2021_03_315">22_sept_2021_03_315</string>
+    <string name="support_email">care@appointu.online</string>
+    <string name="designed_dev"><![CDATA[Designed & Developed By Darwinbark Technology]]></string>
+    <string name="developedby"><![CDATA[Designed & Developed By \n Darwinbark Technology]]></string>
+    <string name="verify">Verify</string>
+    <string name="next">NEXT</string>
+    <string name="ok_message">OK</string>
+    <string name="grant_all_files_permission"><![CDATA[<string name=\"grant_all_files_permission\"><html><body>Amaze needs all files permission to continue.         \nOn next screen, please select <b>Amaze</b> and select <b>Allow access to manage all files</b> option.             \n\n<font color=\'#ff6347\'><i>Canceling this dialog will exit the app.</i></font></body></html></string>]]></string>
+    <string name="file_provider_authority"><![CDATA["   <string name=\"file_provider_authority\" com.darwinbark.fabcustomer.fileprovider"]]></string>
+    <string name="designed_amp_developed_by_darwinbark_technology"><![CDATA[Designed & Developed By :- Darwinbark Technology]]></string>
+</resources>

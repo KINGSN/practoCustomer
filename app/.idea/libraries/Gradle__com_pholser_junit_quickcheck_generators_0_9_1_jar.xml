@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Gradle: com.pholser:junit-quickcheck-generators:0.9.1@jar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.pholser/junit-quickcheck-generators/0.9.1/9524edd3b8f7094a6862d33d1b864615e8c846b3/junit-quickcheck-generators-0.9.1.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.pholser/junit-quickcheck-generators/0.9.1/82a4f3e9024e5212980d03f4d8aac022255500f5/junit-quickcheck-generators-0.9.1-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.pholser/junit-quickcheck-generators/0.9.1/95289872458ddfc8f56c6ba5b407771c3628ea7e/junit-quickcheck-generators-0.9.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

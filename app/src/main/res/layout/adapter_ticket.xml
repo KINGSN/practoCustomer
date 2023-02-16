@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="10dp"
+        app:cardBackgroundColor="@color/cardbgcolor"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="10dp">
+
+        <RelativeLayout
+            android:id="@+id/rlClick"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp">
+
+            <com.darwinbark.fabcustomer.utils.CustomTextViewBold
+                android:id="@+id/tvTicketid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/_10sdp"
+                android:text="#155" />
+
+            <com.darwinbark.fabcustomer.utils.CustomTextViewBold
+                android:id="@+id/tvTicket"
+                android:layout_below="@+id/tvTicketid"
+                android:layout_width="@dimen/_200sdp"
+                android:maxWidth="@dimen/_250sdp"
+                android:layout_height="wrap_content"
+                android:text="Please Approve My Account" />
+
+            <com.darwinbark.fabcustomer.utils.CustomTextView
+                android:id="@+id/tvDate"
+                android:textSize="@dimen/_12sdp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvTicket"
+                android:text="12 sept 2021" />
+
+
+
+
+            <LinearLayout
+                android:id="@+id/llStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignEnd="@+id/tvTicket"
+                android:layout_toEndOf="@+id/tvTicket"
+                android:background="@drawable/rectangle_orange">
+
+                <com.darwinbark.fabcustomer.utils.CustomTextView
+                    android:id="@+id/tvStatus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="@string/pending"
+                    android:textColor="@color/white"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+
+
+
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginEnd="10dp"
+        app:cardElevation="5dp"
+        app:cardBackgroundColor="@color/cardbgcolor"
+        >
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/IVprofile"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+               android:layout_margin="10dp"
+                android:src="@drawable/dummyuser_image" />
+
+            <com.darwinbark.fabcustomer.utils.CustomTextViewBold
+                android:id="@+id/tvTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="15dp"
+                android:layout_toEndOf="@+id/IVprofile"
+                android:text=""
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <com.darwinbark.fabcustomer.utils.CustomTextView
+                android:id="@+id/tvDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="5dp"
+                android:text=""
+                android:textColor="@color/colorPrimary"
+                android:textSize="14sp" />
+
+            <com.darwinbark.fabcustomer.utils.CustomTextView
+                android:id="@+id/tvMsg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvTitle"
+                android:layout_marginStart="8dp"
+                android:layout_toEndOf="@+id/IVprofile"
+                android:textSize="14sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/IVprofile"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:orientation="vertical">
+
+
+            </LinearLayout>
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+</layout>

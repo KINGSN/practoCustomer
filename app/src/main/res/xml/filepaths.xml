@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<paths>
+    <external-path name="external_files" path="."/>
+    <!--<external-files-path
+        name="internal_images"
+        path="files/Pictures" />
+    <external-files-path
+        name="internal_images_alternate"
+        path="Pictures" />-->
+
+</paths>

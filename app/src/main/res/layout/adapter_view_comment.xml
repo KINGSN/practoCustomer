@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="1dp">
+
+        <com.darwinbark.fabcustomer.utils.CustomTextView
+            android:id="@+id/tvName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="2dp"
+            android:text=""
+            android:textColor="#9a9a9a"
+            android:textSize="12sp" />
+
+        <RelativeLayout
+            android:id="@+id/leftbubbleContainer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvName"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="1dp"
+            android:background="@drawable/left_bubble_drawable"
+            android:padding="1dp">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ivView">
+
+
+                <com.darwinbark.fabcustomer.utils.CustomTextView
+                    android:id="@+id/textViewMessage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:layout_marginTop="@dimen/_2sdp"
+                    android:layout_marginBottom="@dimen/_1sdp"
+                    android:maxWidth="200dp"
+                    android:minWidth="80dp"
+                    android:text="hello_i_m_new"
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+
+                <com.darwinbark.fabcustomer.utils.CustomTextView
+                    android:id="@+id/textViewTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textViewMessage"
+                    android:layout_alignEnd="@+id/textViewMessage"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginBottom="@dimen/_3sdp"
+                    android:text="22_sept_2021_03_315"
+                    android:textAlignment="viewEnd"
+                    android:textColor="#9a9a9a"
+                    android:textSize="@dimen/_8sdp" />
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/ivView"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:visibility="gone" />
+
+
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/imageViewmessageTicks"
+            android:layout_width="15dp"
+            android:layout_height="12dp"
+            android:layout_below="@+id/leftbubbleContainer"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="2dp"
+            android:src="@drawable/iconsent"
+            android:visibility="gone" />
+
+        <!--   <com.darwinbark.fabartist.utils.CustomTextView
+            android:id="@+id/textViewTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/leftbubbleContainer"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="2dp"
+            android:layout_toStartOf="@id/imageViewmessageTicks"
+            android:text=""
+
+            android:textColor="#9a9a9a"
+            android:textSize="12sp" />-->
+
+    </RelativeLayout>
+</RelativeLayout>

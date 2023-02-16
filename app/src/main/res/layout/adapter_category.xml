@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto">
+    <data>
+
+        <variable
+            name="HomeCategoryDTO"
+            type="com.darwinbark.fabcustomer.dto.HomeCategoryDTO" />
+    </data>
+
+    <RelativeLayout
+        android:id="@+id/rlCat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/llMain"
+            android:layout_width="@dimen/_65sdp"
+            android:layout_height="@dimen/_65sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_1sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:background="?android:attr/selectableItemBackground"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/cIvImage"
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="@dimen/_50sdp"
+                android:src="@drawable/ic_cleaner"
+                android:padding="@dimen/_5sdp"
+                android:elevation="2dp"
+                android:visibility="visible" />
+
+            <com.darwinbark.fabcustomer.utils.CustomTextView
+                android:id="@+id/tv_name"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:ellipsize="marquee"
+                android:fadingEdge="horizontal"
+                android:gravity="center"
+                android:layout_marginStart="@dimen/_2sdp"
+                android:layout_marginEnd="@dimen/_2sdp"
+                android:layout_marginTop="@dimen/_2sdp"
+                android:layout_marginBottom="@dimen/_1sdp"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:scrollHorizontally="false"
+                android:singleLine="false"
+                android:text="@{HomeCategoryDTO.cat_name}"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="@dimen/_7sdp" />
+        </LinearLayout>
+
+    </RelativeLayout>
+</layout>
+
+

@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="com.darwinbark.fabcustomer.ui.activity.SignUpActivity">
+
+    <ImageView
+        android:id="@+id/ivLogo"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/secure_login" />
+
+
+
+    <LinearLayout
+        android:id="@+id/LLsign"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/ivLogo"
+        android:layout_marginTop="0dp"
+        android:orientation="vertical"
+        android:padding="25dp">
+
+        <com.hbb20.CountryCodePicker
+            android:id="@+id/country_code_picker"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:padding="7dp"
+            app:ccp_autoDetectCountry="true"
+            app:ccp_showFlag="true"
+            app:ccp_showFullName="true"
+            android:drawableTint="#1D82D3"
+            app:ccp_showNameCode="true" />
+
+        <com.darwinbark.fabcustomer.utils.CustomEditText
+            android:id="@+id/CETemailadd"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/edittext_background"
+            android:hint="@string/email_addressorfone"
+            android:inputType="textEmailAddress"
+            android:paddingStart="20dp"
+            android:singleLine="true"
+            android:text=""
+            android:textColor="@color/black"
+            android:textColorHint="@color/editketext"
+            tools:ignore="MissingClass" />
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/edittext_background">
+
+            <com.darwinbark.fabcustomer.utils.CustomEditText
+                android:id="@+id/CETenterpassword"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_toStartOf="@+id/ivEnterShow"
+                android:background="@android:color/transparent"
+                android:hint="@string/enter_password"
+                android:inputType="textPassword"
+                android:paddingStart="20dp"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textColorHint="@color/editketext" />
+
+            <ImageView
+                android:id="@+id/ivEnterShow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerInParent="true"
+                android:layout_marginEnd="10dp"
+                android:padding="5dp"
+                android:src="@drawable/ic_pass_invisible" />
+
+        </RelativeLayout>
+
+        <com.darwinbark.fabcustomer.utils.CustomTextViewBold
+            android:id="@+id/CTVBforgot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/CETenterpassword"
+            android:layout_gravity="right"
+            android:layout_marginTop="30dp"
+            android:text="@string/forgotten_password"
+            android:textColor="@color/black" />
+
+        <com.darwinbark.fabcustomer.utils.CustomButton
+            android:id="@+id/CBsignIn"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/button_selector2"
+            android:text="@string/sign_in"
+            android:textAllCaps="false"
+            android:textColor="@color/white" />
+
+
+        <LinearLayout
+            android:id="@+id/snup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/CBsignIn"
+            android:layout_margin="16dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <com.darwinbark.fabcustomer.utils.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/didn_t_have_any_account"
+                android:textColor="@color/black" />
+
+            <com.darwinbark.fabcustomer.utils.CustomTextView
+                android:id="@+id/CTVsignup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:text="@string/sign_up"
+                android:textColor="@color/colorPrimary" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/snup2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/snup"
+            android:layout_marginStart="70dp"
+            android:layout_marginEnd="70dp"
+            android:layout_marginBottom="16dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            tools:ignore="RtlSymmetry">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="7"
+                android:background="@color/colorPrimaryDark"
+                android:paddingStart="20dp" />
+
+            <TextView
+                android:id="@+id/contactUs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center_horizontal"
+                android:text="Contact Us"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="13sp" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="7"
+                android:background="@color/colorPrimaryDark"
+                android:paddingStart="20dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/contactUs"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="1dp"
+            android:layout_marginTop="@dimen/_70sdp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            tools:ignore="RtlSymmetry">
+
+           <!-- <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="7"
+                android:background="@color/colorPrimaryDark"
+                android:paddingStart="20dp" />-->
+
+            <!--  <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="7"
+                android:background="@color/colorPrimaryDark"
+                android:paddingStart="20dp" />-->
+
+            <TextView
+                android:id="@+id/contactUs2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:clickable="true"
+                android:focusable="true"
+
+                android:gravity="center_horizontal"
+                android:text="@string/developedby"
+                android:textAlignment="center"
+                android:textColor="@color/cards_label_textColor"
+                android:textSize="8sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+    <RelativeLayout
+        android:id="@+id/RRsncbar"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_alignParentBottom="true" />
+
+</RelativeLayout>
+</layout>
